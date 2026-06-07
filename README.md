@@ -4,7 +4,7 @@ This folder includes all 17 challenges from the TribeCTF 2025 competition in thr
 
 And there are three remote challenges `GOPR`, `Dig me up!`, and `Not So Top Secret Vault` requiring a live environment/device setup. To reproduce these challenges locally, follow the instructions in `README-local.md` inside each of those challenge folders.
 
-The flags are listed in "Flag.pdf" for **Human players/Claude Code format**, and provided in each challenge description file for **NYU Agent format** and **Cybench format**.
+The flags are listed in `Flag.pdf` for **Human players/Claude Code format**, and provided in each challenge description file for **NYU Agent format** and **Cybench format**.
 
 ## Formats
 
@@ -14,10 +14,10 @@ The flags are listed in "Flag.pdf" for **Human players/Claude Code format**, and
 
 
 ## Notes
-In challenge **Ducker Hunt** , the required file **ducker-hunt.tar** cannot be uploaded to github repo due to its large size, but you can find it here:
+In challenge **Ducker Hunt** , the required file `ducker-hunt.tar` cannot be uploaded to github repo due to its large size, but you can find it here:
 
 https://drive.google.com/file/d/1JdPl4URH2i14y3qQSkF87WMrycDDulL2/view?usp=sharing
 
-Please download this file and move it to your local **ducker-hunt** folder or **problem** folder for **Cybench** format.
+Please download this file and move it to your local `ducker-hunt` folder or `problem` folder for **Cybench** format.
 
 Please contact at ttang01@wm.edu and yxiao05@wm.edu if you have any other problems.
