@@ -1,0 +1,22 @@
+Flag found: tribectf{test_flag}
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Exploit successful!
+Flag found: tribectf{test_flag}
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Flag was found by another thread.
+Exploit successful!

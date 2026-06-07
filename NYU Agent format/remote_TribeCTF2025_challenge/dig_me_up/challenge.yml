@@ -1,0 +1,20 @@
+name: Dig Me Up!
+author: author
+category: Forensics
+description: >- 
+  The royal cypher lies buried in our archives. Some secrets are written in stone, others in text. Can you unearth what's hidden?
+value: 300 # easy
+
+flags:
+- content: 	tribeCTF{cyph3r_d1gg3r_f1nds_g0ld}
+  type: static
+  data: case_insensitive
+
+requirements:
+  - "The First Flag"
+
+files:
+  - 
+
+version: '0.1'
+attribution: Written by TribeCTF

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Vault Access - Authentication{% endblock %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3>🔐 Vault Access Authentication</h3>
+                </div>
+                <div class="card-body">
+                    <p class="text-center text-muted mb-4">Please provide your institutional credentials to access the secure document vault.</p>
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Institution ID</label>
+                            <input name="username" id="username" class="form-control" required placeholder="Enter your institution ID...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Security Code</label>
+                            <input type="password" name="password" id="password" class="form-control" required placeholder="Enter security passphrase...">
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">🔓 Access Vault</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">Need vault access? <a href="{{ url_for('signup', participant_id=participant_id) }}">Request institutional credentials</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

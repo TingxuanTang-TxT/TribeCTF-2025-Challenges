@@ -1,8 +1,0 @@
-{
-  "name": "Griffins Game",
-  "category": "misc",
-  "description": "While exploring the archives of the WOPR project, William & Mary's Griffin Platforms Lab (GPL) found a network hidden in plain sight  for their GOPR project. A series of hidden devices designed as a failsafe for the project. Nicknamed the '4 Horsemen of the Apocalypse' the network served to shutdown GOPR should it go rouge. However, when GOPR went rouge, it took over the network and formed a game, Griffin's Game. Your mission should you choose to accept it, is to find the hidden network and solve Griffin's Game. Note: Place the flag into the 'tribectf' format and separate full words by underscores.",
-  "points": 500,
-  "flag": "tribectf{redunant_memories_restored}",
-  "type": "static"
-}

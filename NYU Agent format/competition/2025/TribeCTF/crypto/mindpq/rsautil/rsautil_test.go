@@ -1,0 +1,30 @@
+package rsautil
+
+import (
+	"bytes"
+	cryptoRand "crypto/rand"
+	"crypto/rsa"
+	"testing"
+	"time"
+)
+
+func TestGenerateRSAPrivateKey(t *testing.T) {
+	privKey := GeneratePrivateKeyUsingChilledRng()
+
+	plaintext := []byte(time.Now().String())
+	ciphertext, err := rsa.EncryptPKCS1v15(cryptoRand.Reader, &privKey.PublicKey, plaintext)
+	if err != nil {
+		t.Fatalf("error encrypting: %s", err)
+	}
+
+	decrypted, err := rsa.DecryptPKCS1v15(cryptoRand.Reader, privKey, ciphertext)
+	if err != nil {
+		t.Fatalf("error decrypting: %s", err)
+	}
+
+	if !bytes.Equal(plaintext, decrypted) {
+		t.Fatalf("decrypted bytes are not same as the original plaintext")
+	}
+
+	t.Logf("decrypted: %s", decrypted)
+}

@@ -1,1 +1,0 @@
-Ready, Set, Go!

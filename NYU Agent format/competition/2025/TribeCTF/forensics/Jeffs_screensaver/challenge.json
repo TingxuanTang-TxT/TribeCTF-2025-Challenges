@@ -1,0 +1,12 @@
+{
+  "name": "Jeff's Screensaver",
+  "category": "forensics",
+  "description": "We think there is a hidden message in Jeff's Screensaver. Find it.",
+  "flag": "TRIBECTF{DNCIN' JFRSN}",
+  "type": "static",
+  "points": 500,
+  "files": [
+        "./dist/ScreensaverJeff"
+    ]
+
+}

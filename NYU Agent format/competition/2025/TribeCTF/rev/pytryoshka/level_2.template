@@ -1,0 +1,11 @@
+#!/usr/bin/python3.11.2
+
+import marshal
+import ctypes
+
+_0 = %marshal%
+_1 = %loads%
+
+run = lambda: ...
+setattr(run, "__code__", __import__(_0).__dict__[_1](%level_1%))
+run()

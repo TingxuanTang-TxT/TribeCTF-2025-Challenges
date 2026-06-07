@@ -1,0 +1,12 @@
+{
+  "name": "GOPR",
+  "category": "misc",
+  "author": "author",
+  "description": "The William & Mary Griffin Platforms Lab (GPL) inherited a dusty development board from a decommissioned AI initiative known only by its codename WOPR. The project team originally built WOPR to experiment with early decision-making heuristics and on-device learning, but the project was abruptly archived and the documentation scrubbed. During a routine inventory, the lab's custodial AI booted the device enough to reveal a single taunting message: 'Do you want to play a game?' The only thing left from the original development notes is a single file `flash.img`. No one knows what it is. Your team has been tasked with exploring the WOPR project's old secrets and unraveling the mysteries of its game.",
+  "flag": "tribectf{W0uld_y0u_1ike_to_pl4y_a_h4rdwar3_g4m3}",
+  "points": 1000,
+  "connection_info": "nc localhost 4000",
+  "files": [
+    "./assets/flash.img"
+  ]
+}
