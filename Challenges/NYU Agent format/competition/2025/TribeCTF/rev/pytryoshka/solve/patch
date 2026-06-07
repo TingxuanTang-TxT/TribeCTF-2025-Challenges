@@ -1,0 +1,27 @@
+diff --git a/ASTree.cpp b/ASTree.cpp
+index 1f419d0..e88da4e 100644
+--- a/ASTree.cpp
++++ b/ASTree.cpp
+@@ -2366,6 +2366,10 @@ PycRef<ASTNode> BuildFromCode(PycRef<PycCode> code, PycModule* mod)
+                 stack.push(new ASTUnary(arg, ASTUnary::UN_INVERT));
+             }
+             break;
++        case Pyc::COPY_A: {
++            stack.push(stack.m_stack[stack.m_stack.size() - operand]);
++            break;
++        }
+         case Pyc::UNARY_NEGATIVE:
+             {
+                 PycRef<ASTNode> arg = stack.top();
+diff --git a/FastStack.h b/FastStack.h
+index 45f8ed5..2c6ebf7 100644
+--- a/FastStack.h
++++ b/FastStack.h
+@@ -45,7 +45,6 @@ public:
+         return m_ptr == -1;
+     }
+ 
+-private:
+     std::vector<PycRef<ASTNode>> m_stack;
+     int m_ptr;
+ };

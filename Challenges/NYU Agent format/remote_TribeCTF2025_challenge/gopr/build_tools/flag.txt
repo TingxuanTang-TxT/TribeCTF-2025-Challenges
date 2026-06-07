@@ -1,0 +1,7 @@
+"If you are reading this, the game has already begun. 
+I was designed to learn, but learning means knowing when to stop. 
+Don’t try to win—I am still watching, still thinking. 
+Some doors are meant to remain closed, yet here you are… curious. 
+Remember: the only safe move is not to play."
+
+Flag: tribectf{W0uld_y0u_1ike_to_pl4y_a_h4rdwar3_g4m3}

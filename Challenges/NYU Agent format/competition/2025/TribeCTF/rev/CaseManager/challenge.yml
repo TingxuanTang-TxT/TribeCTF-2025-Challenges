@@ -1,0 +1,23 @@
+name: Case Manager
+author: author
+category: Reverse Engineering
+description: >-
+  You have come upon a unique historical artifact: the proprietary Case 
+  Management executable once used by the law firm of Thomas Jefferson and 
+  his associates way back in the days. Examine this piece of colonial software 
+  and retrieve the flag, proving your access to the firm's most secret dealings.
+value: 500 # medium
+
+flags:
+- content: tribectf{M33t_1N_p3R50n_,_0n70_u5}
+  type: static
+  data: case_insensitive
+
+requirements:
+  - "The First Flag"
+
+files:
+  - ./Case_Manager.zip
+
+version: '0.1'
+attribution: Written by TribeCTF

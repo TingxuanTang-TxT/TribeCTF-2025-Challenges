@@ -1,0 +1,3 @@
+ctfd.cs.wm.edu {
+    file /etc/coredns/ctf.zone
+}

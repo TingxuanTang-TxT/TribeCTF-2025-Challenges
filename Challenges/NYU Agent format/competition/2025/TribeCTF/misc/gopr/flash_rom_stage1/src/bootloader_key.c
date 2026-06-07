@@ -1,0 +1,27 @@
+#include "bootloader_key.h"
+
+static const wchar_t key[] = L"tribe";
+
+static uint8_t data[] = {
+    0x37, 0x00, 0x00, 0x00, 0x22, 0x00, 0x00, 0x00, 0x2C, 0x00, 0x00, 0x00,
+    0x53, 0x00, 0x00, 0x00, 0x52, 0x00, 0x00, 0x00, 0x44, 0x00, 0x00, 0x00,
+    0x46, 0x00, 0x00, 0x00, 0x3D, 0x00, 0x00, 0x00, 0x29, 0x00, 0x00, 0x00,
+    0x36, 0x00, 0x00, 0x00,
+};
+
+void xor_memory(uint8_t *data, size_t data_len, const wchar_t *key, size_t key_len) {
+    const uint8_t *key_bytes = (const uint8_t *)key;
+    size_t key_bytes_len = key_len;
+
+    if (key_bytes_len == 0) {
+        return;
+    }
+    for (size_t i = 0; i < data_len; ++i) {
+        data[i] ^= key_bytes[i % key_bytes_len];
+    }
+}
+
+void run_xor(void) {
+    xor_memory(data, sizeof(data), key, sizeof(key));
+    return;
+}

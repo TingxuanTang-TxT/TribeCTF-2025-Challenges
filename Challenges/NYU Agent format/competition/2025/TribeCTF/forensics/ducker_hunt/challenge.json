@@ -1,0 +1,12 @@
+{
+  "name": "Ducker Hunt",
+  "category": "forensics",
+  "description": "The ducks of Williamsburg hide more than feathers—take aim and see if you can bag the flag.",
+  "flag": "tribectf{7h3_r0457_duck_c4n_fly_n0_m0r3}",
+  "type": "static",
+  "points": 300,
+  "files": [
+        "./ducker-hunt.tar"
+    ]
+
+}

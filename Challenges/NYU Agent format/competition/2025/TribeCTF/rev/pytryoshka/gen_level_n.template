@@ -1,0 +1,6 @@
+from fill_template import fill
+from pathlib import Path
+
+template = Path("level_n.template").read_text()
+filled = fill(template, {})
+Path("generated/level_n.py").write_text(filled)

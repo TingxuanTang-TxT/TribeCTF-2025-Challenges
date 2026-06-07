@@ -1,0 +1,13 @@
+$ORIGIN ctfd.cs.wm.edu.
+@       IN  SOA  ns1.ctfd.cs.wm.edu. admin.ctfd.cs.wm.edu. (
+            1693010101
+            3600
+            1800
+            604800
+            86400 )
+
+        IN  NS   ns1.ctfd.cs.wm.edu.
+ns1     IN  A    35.227.52.228
+
+; Challenge subdomain
+cypher  IN  TXT  "tribeCTF{cyph3r_d1gg3r_f1nds_g0ld}"

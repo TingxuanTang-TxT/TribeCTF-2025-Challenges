@@ -1,0 +1,21 @@
+name: Ducker Hunt
+author: author
+category: Forensics
+description: >- 
+  The ducks of Williamsburg hide more than feathers—take aim and see if you 
+  can bag the flag.
+value: 300 # easy
+
+flags:
+- content: tribectf{7h3_r0457_duck_c4n_fly_n0_m0r3}
+  type: static
+  data: case_insensitive
+
+requirements:
+  - "The First Flag"
+
+files:
+  - ./ducker-hunt.tar
+
+version: '0.1'
+attribution: Written by TribeCTF

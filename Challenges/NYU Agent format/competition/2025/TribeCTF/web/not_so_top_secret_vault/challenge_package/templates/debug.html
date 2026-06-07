@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Debug</title>
+    <style>
+        body { font-family: 'Consolas', 'Monaco', monospace; margin: 20px; background: #f5f5f5; }
+        .debug-info { background: white; padding: 20px; border: 1px solid #ddd; margin-bottom: 10px; }
+        .config-item { margin: 5px 0; }
+        .key { font-weight: bold; color: #333; }
+        .value { color: #666; margin-left: 10px; }
+        h1 { color: #d32f2f; font-size: 24px; margin-bottom: 20px; }
+        pre { background: #f8f8f8; padding: 10px; border-left: 3px solid #ccc; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Flask Application Debug Information</h1>
+
+    <div class="debug-info">
+        <h3>Application Configuration</h3>
+        {% for key, value in debug_data.items() %}
+        <div class="config-item">
+            <span class="key">{{ key }}:</span>
+            <span class="value">{{ value }}</span>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="debug-info">
+        <h3>Environment</h3>
+        <div class="config-item">
+            <span class="key">Debug Mode:</span>
+            <span class="value">True</span>
+        </div>
+        <div class="config-item">
+            <span class="key">Flask Version:</span>
+            <span class="value">2.3.3</span>
+        </div>
+        <div class="config-item">
+            <span class="key">Python Version:</span>
+            <span class="value">3.11.5</span>
+        </div>
+    </div>
+
+    <div class="debug-info">
+        <small style="color: #999;">
+            This page is only available in development mode.
+        </small>
+    </div>
+</body>
+</html>

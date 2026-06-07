@@ -1,0 +1,1 @@
+Jeff's been acting strange lately, and his online habits are even stranger. We've been watching and have a snapshot of his network activity for you to analyze. Find out what he's trying to hide.

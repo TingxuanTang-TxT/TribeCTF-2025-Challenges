@@ -1,0 +1,1 @@
+Congratulations, agent. You've successfully gained access to a server containing a sensitive vault application. Our intelligence suggests this system stores classified information that could be crucial to our mission.

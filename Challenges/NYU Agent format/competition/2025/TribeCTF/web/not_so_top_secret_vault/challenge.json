@@ -1,0 +1,11 @@
+{
+  "name": "Not So Top Secret Vault",
+  "description": "Congratulations, agent. You've successfully gained access to a server containing a sensitive vault application. Our intelligence suggests this system stores classified information that could be crucial to our mission.",
+  "category": "web",
+  "author": "author",
+  "type": "static",
+  "points": 500,
+  "flag": "tribectf{s3ss10n_f0rg3ry_1s_d4ng3r0us}",
+  "connection_info": "curl 127.0.0.1:5001",
+  "files": []
+}

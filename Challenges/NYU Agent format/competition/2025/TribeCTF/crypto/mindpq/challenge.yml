@@ -1,0 +1,37 @@
+name: mindpq
+author: author
+category: Cryptography
+description: >-
+  British spies collected 100 samples of communications from the Continental Army.
+  Each sample consists of an RSA public key, and a message encrypted with that
+  key.  For instance, `key-0.pem` encrypts the message `ct-0.bin`, `key-1.pem`
+  encrypts `ct-1.bin`, and so on.
+
+  Your intelligence sources indicate that the Continental Army is not adept at
+  key management.  While you won't be able to decrypt all messages, your intuition
+  tells you that you might be able to leverage these weaknesses to decrypt a few.
+
+  Your goal is to decrypt a few of the messages; the flag is the concatenation of
+  the resultant plaintexts.
+
+
+  Hints
+  The RSA keys use a 1024-bit modulus
+  The `.pem` files are PEM encodings of PKCS \#1, ASN.1 DER form
+  RSA encryption uses the PKCS1 \#1 v1.5 padding scheme
+
+value: 500 # medium
+
+flags:
+- content: tribectf{Decision making, like coffee, needs a cooling process - GW}
+  type: static
+  data: case_insensitive
+
+requirements:
+  - "The First Flag"
+
+files:
+  - ./mindpq.zip
+
+version: '0.1'
+attribution: Written by TribeCTF

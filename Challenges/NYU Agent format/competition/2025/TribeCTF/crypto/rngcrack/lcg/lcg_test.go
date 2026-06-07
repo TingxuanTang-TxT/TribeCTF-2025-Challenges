@@ -1,0 +1,23 @@
+package lcg
+
+import (
+	"testing"
+)
+
+func TestLCG(t *testing.T) {
+	multiplier := 48271
+	increment := 0
+	modulus := 1<<31 - 1
+	seed := 42
+	lcg := NewLCG(multiplier, increment, int(modulus), int(seed))
+	expectedValues := []int{2027382, 1226992407, 551494037, 961371815,
+		1404753842, 2076553157, 1350734175, 1538354858, 90320905,
+		488601845, 1634248641}
+	for _, expected := range expectedValues {
+		generated := lcg.Generate()
+		if expected != generated {
+			t.Fatalf("generated: %d, expected: %d", generated, expected)
+		}
+	}
+	t.Log("all generated values matched expected values")
+}

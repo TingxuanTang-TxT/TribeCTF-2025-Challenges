@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /ctf/*/admin
+Disallow: /admin/
+Disallow: /management/
+Allow: /

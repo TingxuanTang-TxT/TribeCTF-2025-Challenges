@@ -1,0 +1,13 @@
+prime = 277768995366174730356023524943561131681
+modular_inverses = %inverses%
+name = lambda: input("Please enter the password to unlock it: ")
+
+print("Welcome to Sticky's office supplies vault!")
+
+for c, inv in zip(name(), modular_inverses, strict=True):
+    if ord(c) * inv % prime != 1:
+        print("Incorrect. Locking the vault...")
+        break
+
+else:
+    print("Correct! [the vault opens, revealing a mountain of office supplies.]")

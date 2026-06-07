@@ -1,0 +1,4 @@
+*.pyc
+/pycdc
+/decompiler
+/out.py

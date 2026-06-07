@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+
+p {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/priv/static/Rufina.ttf) format('truetype');
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Rufina;
+}
+
+button {
+    font-family: Rufina;
+}
+
+.tan {
+    background-color: #c1aa81;
+}
+
+.tan-text {
+    color: #c1aa81;
+}
+
+.nav-item {
+    float: right;
+    padding: 0.25rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    border-left: .05rem solid #555;
+}
+
+.mackmage {
+    width: 10rem;
+    height: 10rem;
+}
+
+label,
+input {
+    margin: 0.25rem;
+}
+
+/* 
+input {
+    border-width: .1rem;
+    border-color: grey;
+} */
+
+.centered-v {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.centered-h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+    display: inline-block;
+}

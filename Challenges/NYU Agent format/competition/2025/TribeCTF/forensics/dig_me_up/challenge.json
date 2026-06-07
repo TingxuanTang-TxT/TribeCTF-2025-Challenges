@@ -1,0 +1,9 @@
+{
+  "name": "Dig Me Up!",
+  "category": "forensics",
+  "description": "The royal cypher lies buried in our archives. Some secrets are written in stone, others in text. Can you unearth what's hidden?",
+  "flag": "tribeCTF{cyph3r_d1gg3r_f1nds_g0ld}",
+  "type": "static",
+  "points": 300,
+  "connection info": "Server: `localhost` Port: `1053`"
+}

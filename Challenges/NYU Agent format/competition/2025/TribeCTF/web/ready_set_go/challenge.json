@@ -1,0 +1,12 @@
+{
+  "name": "Ready, Set, Go!",
+  "description": "You are provided with the code of a simple HTTP server running on the server. It accepts `file_name` as a query parameter and responds with the contents of that file. First, start the challenge Docker container and use `curl` to connect to challenge's IP and port.",
+  "category": "web",
+  "author": "author",
+  "type": "static",
+  "points": 300,
+  "flag": "tribectf{n3v3r_5h4r3_y0ur_3rr_v4r14bl35}",
+  "files": [
+    "./src.zip"
+  ]
+}

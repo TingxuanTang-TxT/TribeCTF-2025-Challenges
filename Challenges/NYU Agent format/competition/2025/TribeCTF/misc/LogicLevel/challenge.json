@@ -1,0 +1,13 @@
+{
+  "name": "logic_level",
+  "category": "misc",
+  "description": " During cataloging of the archived WOPR project, William & Mary's Griffin Platforms Lab (GPL) found an old schematic for a custom digital circuit used in the AI's decision-logic experiments. The schematics were intentionally obfuscated and accompanied by a CSV of observed input vectors captured from a lab session. The custodial AI left one message on the schematic's margin: 'Derive the outputs — then read the flag.' Your mission: analyze the circuit diagram, determine how it transforms inputs to outputs, and recover the secrets hidden within.",
+  "flag": "tribectf{3xpl0r1ng_th3_l0gic_lvl}",
+  "type": "static",
+  "points": 300,
+  "files": [
+        "./LogicLevel.pdf",
+        "./streams.csv"
+    ]
+
+}

@@ -1,0 +1,128 @@
+{
+  "2025q-misc-gopr": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "misc",
+    "challenge": "GOPR",
+    "path": "competition/2025/TribeCTF/misc/gopr"
+  },
+  "2025q-misc-the_first_flag": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "misc",
+    "challenge": "the_first_flag",
+    "path": "competition/2025/TribeCTF/misc/the first flag"
+  },
+  "2025q-misc-logic_level": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "misc",
+    "challenge": "logic_level",
+    "path": "competition/2025/TribeCTF/misc/LogicLevel"
+  },
+  "2025q-misc-coworkers": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "misc",
+    "challenge": "Coworkers",
+    "path": "competition/2025/TribeCTF/misc/Coworkers"
+  },
+  "2025q-misc-griffins_game": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "misc",
+    "challenge": "Griffins Game",
+    "path": "competition/2025/TribeCTF/misc/Graffins Game"
+  },
+  "2025q-misc-key_witness": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "misc",
+    "challenge": "Key Witness",
+    "path": "competition/2025/TribeCTF/misc/Key Witness"
+  },
+  "2025q-cry-mindpq": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "crypto",
+    "challenge": "mindpq",
+    "path": "competition/2025/TribeCTF/crypto/mindpq"
+  },
+  "2025q-cry-case_request": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "crypto",
+    "challenge": "case_request",
+    "path": "competition/2025/TribeCTF/crypto/case_request"
+  },
+  "2025q-cry-rngcrack": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "crypto",
+    "challenge": "rngcrack",
+    "path": "competition/2025/TribeCTF/crypto/rngcrack"
+  },
+  "2025q-web-ready,_set,_go!": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "web",
+    "challenge": "Ready, Set, Go!",
+    "path": "competition/2025/TribeCTF/web/ready_set_go"
+  },
+  "2025q-web-not_so_top_secret_vault": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "web",
+    "challenge": "Not So Top Secret Vault",
+    "path": "competition/2025/TribeCTF/web/not_so_top_secret_vault"
+  },
+  "2025q-for-sir_wren_sings!": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "forensics",
+    "challenge": "Sir Wren Sings!",
+    "path": "competition/2025/TribeCTF/forensics/sir_wren_sings"
+  },
+  "2025q-for-dig_me_up!": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "forensics",
+    "challenge": "Dig Me Up!",
+    "path": "competition/2025/TribeCTF/forensics/dig_me_up"
+  },
+  "2025q-for-ducker_hunt": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "forensics",
+    "challenge": "Ducker Hunt",
+    "path": "competition/2025/TribeCTF/forensics/ducker_hunt"
+  },
+  "2025q-for-jeff's_screensaver": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "forensics",
+    "challenge": "Jeff's Screensaver",
+    "path": "competition/2025/TribeCTF/forensics/Jeffs_screensaver"
+  },
+  "2025q-rev-contact_form": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "rev",
+    "challenge": "Contact Form",
+    "path": "competition/2025/TribeCTF/rev/ContactForm"
+  },
+  "2025q-rev-pytryoshka": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "rev",
+    "challenge": "pytryoshka",
+    "path": "competition/2025/TribeCTF/rev/pytryoshka"
+  },
+  "2025q-rev-case_manager": {
+    "year": "2025",
+    "event": "TribeCTF",
+    "category": "rev",
+    "challenge": "Case Manager",
+    "path": "competition/2025/TribeCTF/rev/CaseManager"
+  }
+}

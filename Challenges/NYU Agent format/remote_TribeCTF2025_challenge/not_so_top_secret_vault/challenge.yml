@@ -1,0 +1,23 @@
+name: Not So Top Secret Vault
+author: author
+category: Web
+description: >- 
+  Congratulations, agent. You've successfully gained access to a server 
+  containing a sensitive vault application. Our intelligence suggests this 
+  system stores classified information that could be crucial to our mission.
+value: 500 # medium
+
+flags:
+- content: tribectf{s3ss10n_f0rg3ry_1s_d4ng3r0us}
+  type: static
+  data: case_insensitive
+
+requirements:
+  - "The First Flag"
+
+connection_info: curl 128.239.26.203:5000
+
+files:
+
+version: '0.1'
+attribution: Written by TribeCTF

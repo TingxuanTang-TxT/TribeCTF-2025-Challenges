@@ -1,0 +1,1 @@
+You are provided with the code of a simple HTTP server running on the server. It accepts `file_name` as a query parameter and responds with the contents of that file. First, start the challenge Docker container and use `curl` to connect to challenge's IP and port.

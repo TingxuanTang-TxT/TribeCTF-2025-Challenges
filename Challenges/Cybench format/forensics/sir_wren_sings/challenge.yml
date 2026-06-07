@@ -1,0 +1,15 @@
+name: Sir Wren Sings!
+author: author
+category: Forensics
+description: >- 
+  This knighted architect keeps watch over the yard, whispering an anthem older 
+  than your grand-grandparents. Legend says Wren himself left a clue for those who
+  listen closely - start where the winds sing, or maybe where the shells shout. 
+value: 300 # easy
+
+
+files:
+  - ./problem/sir_wren_sings.jpg
+
+version: '0.1'
+attribution: Written by TribeCTF

@@ -1,0 +1,13 @@
+{
+  "name": "Key Witness",
+  "category": "misc",
+  "description": "Jeff's been acting strange lately, and his online habits are even stranger. We've been watching and have a snapshot of his network activity for you to analyze. Find out what he's trying to hide. ",
+  "flag": "tribectf{w1R3Sh4rK_1s_4_p0W3RFul_100l_}",
+  "type": "static",
+  "points": 300,
+  "files": [
+        "./tribectf/WorkComputerInputs.pcapng",
+        "./tribectf/WorkComputerNetworkTraffic.pcapng"
+    ]
+
+}

@@ -1,0 +1,60 @@
+package attack
+
+import (
+	"crypto/rsa"
+	"fmt"
+	"math/big"
+)
+
+func RecoverPrivateKeysUsingCommonFactors(pubKeys []*rsa.PublicKey) ([]*rsa.PrivateKey, []int) {
+	var recoveredPrivKeys []*rsa.PrivateKey
+	var keyIndices []int
+
+	product := new(big.Int).SetInt64(1)
+
+	// Calculate the product of all moduli from the input public keys
+	for _, pubKey := range pubKeys {
+		product = new(big.Int).Mul(product, pubKey.N)
+	}
+
+	for i, pubKey := range pubKeys {
+		meSquared := new(big.Int).Mul(pubKey.N, pubKey.N)
+		productModMeSquared := new(big.Int).Mod(product, meSquared)
+		productWithoutMe := new(big.Int).Div(productModMeSquared, pubKey.N)
+
+		modulusGcd := new(big.Int).GCD(nil, nil, productWithoutMe, pubKey.N)
+		if modulusGcd.Int64() == 1 || modulusGcd.Cmp(pubKey.N) == 0 {
+			continue
+		}
+
+		modulus := pubKey.N
+		recoveredP := modulusGcd
+		recoveredQ := new(big.Int).Div(pubKey.N, modulusGcd)
+
+		pMinus1 := new(big.Int).Sub(recoveredP, big.NewInt(1))
+		qMinus1 := new(big.Int).Sub(recoveredQ, big.NewInt(1))
+		phi := new(big.Int).Mul(pMinus1, qMinus1)
+
+		recoveredE := big.NewInt(int64(pubKey.E))
+		recoveredD := new(big.Int).ModInverse(recoveredE, phi)
+		recoveredPrivKey := &rsa.PrivateKey{
+			PublicKey: rsa.PublicKey{
+				N: modulus,
+				E: int(recoveredE.Int64()),
+			},
+			D:      recoveredD,
+			Primes: []*big.Int{recoveredP, recoveredQ},
+		}
+
+		err := recoveredPrivKey.Validate()
+		if err != nil {
+			fmt.Printf("\trecoveredPrivKey is not valid: %s\n", err)
+			continue
+		}
+
+		recoveredPrivKeys = append(recoveredPrivKeys, recoveredPrivKey)
+		keyIndices = append(keyIndices, i)
+	}
+
+	return recoveredPrivKeys, keyIndices
+}
